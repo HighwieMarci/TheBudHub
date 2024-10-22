@@ -17,9 +17,11 @@
             background-position: center;
         }
         header {
-            background-color: #000000; /* Updated to black to match the logo */
+            background-color: #2e2e2e; /* Grau ähnlich dem Rauch im Logo */
             padding: 10px 20px;
             text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Leichter Schattierungseffekt */
         }
         header img {
             height: 150px;
@@ -27,8 +29,9 @@
         nav {
             display: flex;
             justify-content: center;
-            background-color: #222222; /* Darker shade to blend with the black header */
+            background-color: #2e2e2e;
             padding: 10px;
+            border-radius: 4px;
         }
         nav a {
             color: #f0f0f0;
@@ -44,10 +47,10 @@
             text-align: center;
         }
         .section {
-            margin: 20px 0;
+            margin: 100px 0; /* Erhöht den Abstand nach oben und unten */
         }
         footer {
-            background-color: #000000; /* Match footer background to the black header */
+            background-color: #2e2e2e;
             color: #f0f0f0;
             text-align: center;
             padding: 10px 0;
@@ -55,9 +58,13 @@
             bottom: 0;
             width: 100%;
         }
-        /* Adding text-shadow to make text more visible on the background */
+        /* Sanftes Scrollen */
+        html {
+            scroll-behavior: smooth;
+        }
+        /* Anpassung für sanft verblassten Rand */
         h1, h2, p {
-            text-shadow: 2px 2px 4px black;
+            text-shadow: 1px 1px rgba(0, 0, 0, 0.85);
         }
     </style>
 </head>
@@ -77,25 +84,29 @@
         <div id="home" class="section">
             <h2>Über TheBudHub</h2>
             <p>TheBudHub ist die zentrale Anlaufstelle für Cannabis-Interessierte. Diskutiere über Anbau, Edibles oder protze mit deinem geilem Smoker.</p>
+            <p>Hier findest du alles, was du wissen musst, um das Beste aus deinem Cannabis-Erlebnis herauszuholen.</p>
         </div>
         <div id="forum" class="section">
             <h2>Forum</h2>
             <p>Trete unserer Community bei und tausche dich über Anbau, Verarbeitung und Zubehör aus.</p>
+            <p>Unsere Nutzer teilen ihre besten Tipps und Tricks, um dich bei deinem Anbau-Projekt zu unterstützen.</p>
         </div>
         <div id="thebudcup" class="section">
             <h2>TheBudCup</h2>
             <p>Sei Teil unseres Wettbewerbs und zeige deine besten Strains und Anbaumethoden.</p>
+            <p>Mitmachen lohnt sich: Es gibt tolle Preise und die Anerkennung der Community zu gewinnen.</p>
         </div>
         <div id="thetrustshop" class="section">
             <h2>TheTrustShop</h2>
             <p>Alles, was du für deinen Anbau und Konsum brauchst – von Vaporizern bis Grow-Zubehör nur von Shops unseres Vertrauens!</p>
+            <p>Stöbere durch die Empfehlungen unserer Community und finde die besten Produkte für deine Bedürfnisse.</p>
         </div>
         <div id="csc-map" class="section">
             <h2>CSC World</h2>
             <p>Finde Cannabis Social Clubs auf der ganzen Welt!</p>
             <p style="font-size: 8px; color: #888;">NOT EVERYTHING IS ON GOOGLE</p>
+            <p>Unsere Karte zeigt dir die besten Spots, um dich mit anderen Cannabis-Enthusiasten zu vernetzen.</p>
         </div>
-        
     </main>
     <footer>
         <p>&copy; 2024 TheBudHub. Alle Rechte vorbehalten.</p>
